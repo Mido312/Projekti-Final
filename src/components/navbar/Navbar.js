@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { BiSearch } from 'react-icons/bi'
-import { BsPerson } from 'react-icons/bs'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa'
@@ -18,14 +17,14 @@ function Navbar() {
             </div>
             <ul className="nav-menu">
                 <Link to='home' smooth={true} duration={500} ><li>Home</li></Link>
-                <Link to='Booking' smooth={true} duration={500} ><li>Booking</li></Link>
+                <Link to='text' smooth={true} duration={500} ><li>Views</li></Link>
+                <Link to='card' smooth={true} duration={500} ><li>Locations</li></Link>
+                <Link to='booking' smooth={true} duration={500} ><li>Booking</li></Link>
                 <Link to='destinations' smooth={true} duration={500} ><li>Destinations</li></Link>
-                <Link to='views' smooth={true} duration={500} ><li>Views</li></Link>
-                <Link to='aboutus' smooth={true} duration={500} ><li>About Us</li></Link>
+                <Link to='aboutus' smooth={true} duration={500} ><li>About us</li></Link>
             </ul>
             <div className="nav-icons">
                 <BiSearch className='icon' style={{ marginRight: '1rem' }} />
-                <BsPerson className='icon' />
             </div>
             <div className="hamburger" onClick={handleNav}>
                 {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
@@ -35,15 +34,16 @@ function Navbar() {
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
                 <ul className="mobile-nav">
                 <Link to='home' smooth={true} duration={500} ><li>Home</li></Link>
-                <Link to='Booking' smooth={true} duration={500} ><li>Booking</li></Link>
+                <Link to='text' smooth={true} duration={500} ><li>Views</li></Link>
+                <Link to='card' smooth={true} duration={500} ><li>Locations</li></Link>
+                <Link to='booking' smooth={true} duration={500} ><li>Booking</li></Link>
                 <Link to='destinations' smooth={true} duration={500} ><li>Destinations</li></Link>
-                <Link to='views' smooth={true} duration={500} ><li>Views</li></Link>
-                <Link to='aboutus' smooth={true} duration={500} ><li>About Us</li></Link>
+                <Link to='aboutus' smooth={true} duration={500} ><li>About us</li></Link>
                 </ul>
                 <div className="mobile-menu-bottom">
                     <div className="menu-icons">
                         <button>Search</button>
-                        <button>Account</button>
+                        
                     </div>
                     <div className="social-icons">
                         <FaFacebook className='icon' />
@@ -58,5 +58,7 @@ function Navbar() {
         </div>
     )
 }
+
+
 
 export default Navbar

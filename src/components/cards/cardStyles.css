@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-para {
+  width: 100%;
+  text-align: center;
+  background: #ff3333;
+  color: white;
+  padding: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-flow: column;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 30px;
+}
+
+.card-container{
+  border: 1px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+
+.loc-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.card-img {
+  width: 150px;
+  height: 175px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  flex-flow: row;
+  margin: 15px 0;
+}
+.card{
+  margin-bottom: 30px;
+}
+
+.loc-name {
+  letter-spacing: 0.15em;
+  margin-right: 0.1em;
+  font-size: 13px;
+}
+
+.loc-google {
+  color: red;
+  font-size: 12px;
+}
+
+.card-title {
+  margin-top: 5px;
+  margin-bottom: 17px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-date {
+  letter-spacing: 0.08em;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.card-description {
+  font-size: 12px;
+}
